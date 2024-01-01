@@ -241,7 +241,7 @@ def Combat():
         if HPB <= 0:
                 print("Ship A wins the combat!")
                 print("Number of Rounds: ", i+1)
-                A.append("#")
+                A.append("#")                                           # Track number of victories
                 break    
         for j in range(Sp_B.FP):
             HPA = HPA - HC(Sp_A.AC)                                     # Change Weapon of Ship B here!
@@ -252,7 +252,7 @@ def Combat():
         if HPA <= 0:
                 print("Ship B wins the combat!")
                 print("Number of Rounds: ", i+1)
-                B.append("#")
+                B.append("#")                                           # Track number of victories
                 break    
 #        print("_________________________________")
               
@@ -279,7 +279,7 @@ def Combat_Init():
             if HPB <= 0:
                     print("Ship A wins the combat!")
                     print("Number of Rounds: ", i+1)
-                    A.append("#")
+                    A.append("#")                                           # Track number of victories
                     break    
             for j in range(Sp_B.FP):
                 HPA = HPA - HC(Sp_A.AC)                                     # Change Weapon of Ship B here!
@@ -290,7 +290,7 @@ def Combat_Init():
             if HPA <= 0:
                     print("Ship B wins the combat!")
                     print("Number of Rounds: ", i+1)
-                    B.append("#")
+                    B.append("#")                                           # Track number of victories
                     break    
 #            print("_________________________________")
     else:
@@ -305,7 +305,7 @@ def Combat_Init():
             if HPA <= 0:
                     print("Ship B wins the combat!")
                     print("Number of Rounds: ", i+1)
-                    B.append("#")
+                    B.append("#")                                           # Track number of victories
                     break      
             for j in range(Sp_A.FP):
                 HPB = HPB - HC(Sp_B.AC)                                     # Change Weapon of Ship A here!
@@ -316,7 +316,7 @@ def Combat_Init():
             if HPB <= 0:
                     print("Ship A wins the combat!")
                     print("Number of Rounds: ", i+1)
-                    A.append("#")
+                    A.append("#")                                           # Track number of victories
                     break            
 #            print("_________________________________")
             
