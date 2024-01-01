@@ -324,7 +324,50 @@ def Combat_Init():
 ##########################################################################################################################################################
 
 """Combat 3 Ships with Initiative"""
+a = d20()                                                                   # Prototype for initiative 3 ships, delete as soon as possible
+#a = d4()                                                                   # replace with actual initiative from ships
+b = d20()
+#b = d4()
+c = d20()
+#c = d4()
 
+B = [a, b, c]                                                               # Prototype Initiative Array, delete as soon as possible, replace with INIT array
+
+
+C = []                                                                      # Prototype Initiative Order Array, replace with recognisable Array!
+
+
+
+               # Initiative WORKS! 3 Ships Initiative solved!
+while len(B) > 0:
+    print(B)
+    if a == b == c:
+        C.append("a")
+        B.remove(max(B))
+        C.append("b")
+        B.remove(max(B))
+        C.append("c")
+        B.remove(max(B))
+    elif max(B) == a:
+        C.append("a")
+        B.remove(max(B))
+        if a == b:
+            C.append("b")
+            B.remove(max(B))
+        elif a == c:
+            C.append("c")
+            B.remove(max(B))
+    elif max(B) == b:
+        C.append("b")
+        B.remove(max(B))
+        if b == c:
+            C.append("c")
+            B.remove(max(B))
+    else:
+        C.append("c")
+        B.remove(max(B))    
+    print("New Array =",B)
+print(C)
 
 
 
